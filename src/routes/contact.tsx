@@ -42,6 +42,11 @@ function Contact() {
             {profile.email}
           </a>
         </Row>
+        <Row label="Phone">
+          <a href={`tel:${profile.phoneRaw}`} className="text-ink hover:text-ink-soft">
+            {profile.phone}
+          </a>
+        </Row>
         <Row label="LinkedIn">
           <a
             href={profile.linkedinUrl}

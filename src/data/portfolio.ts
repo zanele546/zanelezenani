@@ -4,6 +4,8 @@ export const profile = {
   name: "Zanele Zenani",
   location: "Soweto, South Africa",
   email: "simphiwebongiwezenani@gmail.com",
+  phone: "067 458 0574",
+  phoneRaw: "0674580574",
   linkedinLabel: "Zanele Zenani",
   linkedinUrl: "https://www.linkedin.com/search/results/people/?keywords=Zanele%20Zenani",
   github: null as string | null,
