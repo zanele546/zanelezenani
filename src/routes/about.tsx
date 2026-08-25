@@ -23,6 +23,14 @@ export const Route = createFileRoute("/about")({
 function About() {
   return (
     <Page eyebrow="About me" title="A self-driven start" lead={profile.headline}>
+      <div className="flex justify-start">
+        <img
+          src={profile.imageUrl}
+          alt={profile.imageAlt}
+          className="h-40 w-40 rounded-full border-2 border-ink object-cover shadow-lg"
+        />
+      </div>
+
       <Block heading="My story">
         {profile.about.map((p) => (
           <p key={p} className="leading-relaxed text-muted-foreground">

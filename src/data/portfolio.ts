@@ -1,3 +1,5 @@
+import profileImageAsset from "@/assets/zanele-profile.jpg.asset.json";
+
 export const profile = {
   name: "Zanele Zenani",
   location: "Soweto, South Africa",
@@ -6,6 +8,8 @@ export const profile = {
   linkedinUrl: "https://www.linkedin.com/search/results/people/?keywords=Zanele%20Zenani",
   github: null as string | null,
   cvUrl: "/zanele-zenani-cv.pdf",
+  imageUrl: profileImageAsset.url,
+  imageAlt: "Zanele Zenani",
   headline: "Matric graduate from Soweto seeking her first internship",
   intro:
     "I'm an ambitious, organised matric graduate from Soweto building digital skills toward a career in technology. I learn fast on my own, I show up when I say I will, and I'm looking for a first internship where I can contribute and grow.",
