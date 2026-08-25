@@ -17,7 +17,7 @@ export const Route = createFileRoute("/projects")({
     ],
     links: [{ rel: "canonical", href: "/projects" }],
   }),
-  component: Projects;
+  component: Projects,
 });
 
 function Projects() {
