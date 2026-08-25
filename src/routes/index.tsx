@@ -22,11 +22,23 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <div className="mx-auto w-full max-w-3xl px-6 py-20 sm:py-28">
-      <p className="eyebrow">{profile.location}</p>
-      <h1 className="mt-4 text-5xl font-semibold leading-[1.05] sm:text-6xl">
-        {profile.name}
-      </h1>
-      <p className="mt-4 text-xl text-ink-soft">{profile.headline}</p>
+      <div className="flex flex-col gap-8 sm:flex-row sm:items-start sm:gap-10">
+        <div className="shrink-0">
+          <img
+            src={profile.imageUrl}
+            alt={profile.imageAlt}
+            className="h-40 w-40 rounded-full border-2 border-ink object-cover shadow-lg sm:h-48 sm:w-48"
+          />
+        </div>
+        <div className="flex-1">
+          <p className="eyebrow">{profile.location}</p>
+          <h1 className="mt-4 text-5xl font-semibold leading-[1.05] sm:text-6xl">
+            {profile.name}
+          </h1>
+          <p className="mt-4 text-xl text-ink-soft">{profile.headline}</p>
+        </div>
+      </div>
+
       <div className="rule-ink mt-8" />
       <p className="mt-8 text-lg leading-relaxed text-muted-foreground">{profile.intro}</p>
 
