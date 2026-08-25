@@ -63,6 +63,18 @@ export const projects: Project[] = [
     tools: ["WhatsApp", "Google Docs", "Google Drive"],
   },
   {
+    title: "Community Volunteer — Local Clean-Up Initiative",
+    year: "2024",
+    summary:
+      "Participated in organising a community clean-up day, coordinating team tasks and tracking participation.",
+    details: [
+      "Helped plan the clean-up day and divide volunteers into teams with clear tasks and areas.",
+      "Used Google Forms to record participant details and track attendance on the day.",
+      "Created simple posters and social content in Canva to promote the event and thank volunteers afterwards.",
+    ],
+    tools: ["Canva", "Google Forms"],
+  },
+  {
     title: "Project title to come",
     year: "Coming soon",
     summary:
