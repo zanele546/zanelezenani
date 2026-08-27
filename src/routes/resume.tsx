@@ -34,18 +34,13 @@ function Resume() {
       title="Education & experience"
       lead={`${profile.name} · ${profile.location}`}
     >
-      <div className="flex flex-col gap-2">
-        <a
-          href={profile.cvUrl}
-          download
-          className="inline-flex w-fit items-center rounded-md bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-accent"
-        >
-          Download CV (PDF)
-        </a>
-        <p className="text-sm text-muted-foreground">
-          Note: this links to a placeholder file — replace it with your real CV.
-        </p>
-      </div>
+      <a
+        href={profile.cvUrl}
+        download
+        className="inline-flex w-fit items-center rounded-md bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-accent"
+      >
+        Download CV (PDF)
+      </a>
 
       <Block heading="Education">
         {education.map((e) => (
