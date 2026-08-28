@@ -110,8 +110,8 @@ function Assistant() {
         AI Workplace Productivity Assistant
       </h1>
       <p className="mt-4 text-lg text-muted-foreground">
-        Four AI tools for the repetitive work that eats a professional's day: writing
-        emails, summarising meetings, planning tasks and digesting research.
+        Five AI tools for the repetitive work that eats a professional's day: writing
+        emails, summarising meetings, planning tasks, digesting research and answering questions in chat.
       </p>
       <div className="rule-ink mt-8" />
 
