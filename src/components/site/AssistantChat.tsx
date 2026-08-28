@@ -60,15 +60,15 @@ export function AssistantChat() {
             key={i}
             className={m.role === "user" ? "flex justify-end" : "flex justify-start"}
           >
-            <p
-              className={
-                m.role === "user"
-                  ? "max-w-[85%] whitespace-pre-wrap rounded-lg bg-primary px-4 py-2.5 text-sm text-primary-foreground"
-                  : "max-w-[90%] whitespace-pre-wrap rounded-lg border border-border bg-secondary px-4 py-2.5 text-sm text-secondary-foreground"
-              }
-            >
-              {m.content}
-            </p>
+            {m.role === "user" ? (
+              <p className="max-w-[85%] whitespace-pre-wrap rounded-lg bg-primary px-4 py-2.5 text-sm text-primary-foreground">
+                {m.content}
+              </p>
+            ) : (
+              <div className="chat-markdown max-w-[90%] rounded-lg border border-border bg-secondary px-4 py-3 text-sm leading-relaxed text-secondary-foreground">
+                <ReactMarkdown>{m.content}</ReactMarkdown>
+              </div>
+            )}
           </div>
         ))}
 
