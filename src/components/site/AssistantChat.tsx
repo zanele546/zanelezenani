@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useServerFn } from "@tanstack/react-start";
 import { useMutation } from "@tanstack/react-query";
+import ReactMarkdown from "react-markdown";
 import { chatAssistant } from "@/lib/chat.functions";
 
 type Msg = { role: "user" | "assistant"; content: string };
