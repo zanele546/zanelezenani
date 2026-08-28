@@ -3,6 +3,7 @@ import { useServerFn } from "@tanstack/react-start";
 import { useMutation } from "@tanstack/react-query";
 import { useState } from "react";
 import { runAssistant } from "@/lib/assistant.functions";
+import { AssistantChat } from "@/components/site/AssistantChat";
 import {
   audienceOptions,
   toneOptions,
