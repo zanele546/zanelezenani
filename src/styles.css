@@ -104,3 +104,51 @@
   text-transform: uppercase;
   color: var(--color-ink);
 }
+
+@utility chat-markdown {
+  & > * + * {
+    margin-top: 0.65rem;
+  }
+  & h1,
+  & h2,
+  & h3 {
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--color-ink);
+  }
+  & ul,
+  & ol {
+    padding-left: 1.1rem;
+    list-style: disc;
+  }
+  & ol {
+    list-style: decimal;
+  }
+  & li + li {
+    margin-top: 0.25rem;
+  }
+  & strong {
+    color: var(--color-ink-soft);
+  }
+  & a {
+    color: var(--color-ink);
+    text-decoration: underline;
+  }
+  & code {
+    font-size: 0.85em;
+    background: var(--color-muted);
+    padding: 0.1rem 0.3rem;
+    border-radius: 0.2rem;
+  }
+  & blockquote {
+    border-left: 2px solid var(--color-ink);
+    padding-left: 0.75rem;
+    color: var(--color-muted-foreground);
+  }
+  & hr {
+    border-top: 1px solid var(--color-border);
+  }
+}

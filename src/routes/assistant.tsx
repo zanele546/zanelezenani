@@ -3,6 +3,7 @@ import { useServerFn } from "@tanstack/react-start";
 import { useMutation } from "@tanstack/react-query";
 import { useState } from "react";
 import { runAssistant } from "@/lib/assistant.functions";
+import { AssistantChat } from "@/components/site/AssistantChat";
 import {
   audienceOptions,
   toneOptions,
@@ -109,8 +110,8 @@ function Assistant() {
         AI Workplace Productivity Assistant
       </h1>
       <p className="mt-4 text-lg text-muted-foreground">
-        Four AI tools for the repetitive work that eats a professional's day: writing
-        emails, summarising meetings, planning tasks and digesting research.
+        Five AI tools for the repetitive work that eats a professional's day: writing
+        emails, summarising meetings, planning tasks, digesting research and answering questions in chat.
       </p>
       <div className="rule-ink mt-8" />
 
@@ -226,6 +227,17 @@ function Assistant() {
           </pre>
         </section>
       ) : null}
+
+      <section className="mt-14">
+        <h2 className="text-xl font-semibold text-ink-soft">Chatbot interaction</h2>
+        <p className="mt-2 text-sm text-muted-foreground">
+          Prefer to just ask? Chat with the assistant about emails, meetings, planning or
+          anything else on your desk today.
+        </p>
+        <div className="mt-4">
+          <AssistantChat />
+        </div>
+      </section>
 
       <section className="mt-14 rounded-lg border border-border bg-card p-6">
         <h2 className="text-lg font-semibold text-ink-soft">Responsible AI notice</h2>
