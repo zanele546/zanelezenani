@@ -228,6 +228,17 @@ function Assistant() {
         </section>
       ) : null}
 
+      <section className="mt-14">
+        <h2 className="text-xl font-semibold text-ink-soft">Chatbot interaction</h2>
+        <p className="mt-2 text-sm text-muted-foreground">
+          Prefer to just ask? Chat with the assistant about emails, meetings, planning or
+          anything else on your desk today.
+        </p>
+        <div className="mt-4">
+          <AssistantChat />
+        </div>
+      </section>
+
       <section className="mt-14 rounded-lg border border-border bg-card p-6">
         <h2 className="text-lg font-semibold text-ink-soft">Responsible AI notice</h2>
         <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-muted-foreground">
